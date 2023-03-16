@@ -1,7 +1,10 @@
 #include<stdio.h>
+
 /**
- *This is a main functions
-*/
+ * main - a principale function
+ *
+ * Return: The sum of a and b
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
