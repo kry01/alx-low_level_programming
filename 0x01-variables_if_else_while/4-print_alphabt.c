@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (alph[i] == 'e' || alph[i] == 'g')
+		if (alph[i] == 'e' || alph[i] == 'q')
 			continue;
 		putchar(alph[i]);
 	}
