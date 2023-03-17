@@ -1,14 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
 /**
  * main - this program is to know what is the sign of n.
  *
- * @n : random number.
- *
- * Return : 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
