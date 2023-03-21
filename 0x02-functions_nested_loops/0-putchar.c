@@ -1,5 +1,5 @@
 #include "_putchar.c"
-#include "main.h"
+#include <main.h>
 /**
  * main - The main code.
  *
