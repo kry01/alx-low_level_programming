@@ -3,7 +3,7 @@
  * - print_alphabet - return alphabetic in order and in lower case.
  *
  * Return: return 0.
- * /
+ */
 void print_alphabet(void)
 {
 	char i;
