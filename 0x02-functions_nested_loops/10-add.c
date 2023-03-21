@@ -4,7 +4,7 @@
  * @x: var 1
  * @y: var 2
  **/
-void add(int x, int y)
+int add(int x, int y)
 {
 	return (x + y);
 }
