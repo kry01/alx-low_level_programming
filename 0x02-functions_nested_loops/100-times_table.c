@@ -17,16 +17,23 @@ void print_times_table(int n)
 				mult = i * j;
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
 				if (mult <= 9)
 				{
 					_putchar(' ');
+					_putchar(' ');
 					_putchar(mult + '0');
+				}
+				else (mult > 9 && mult < 100)
+				{
+					_putchar(' ');
+					_putchar((mult / 10) + '0');
+					_putchar((mult % 10) + '0');
 				}
 				else
 				{
-					_putchar((mult / 10) + '0');
-					_putchar((mult % 10) + '0');
+					_putchar((mult / 100) + '0');
+					_putchar(((mult / 10) % 10) + '0');
+					_putchar((mult % 100) + '0');
 				}
 			}
 			_putchar('\n');
