@@ -23,7 +23,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(mult + '0');
 				}
-				else (mult > 9 && mult < 100)
+				else if (mult > 9 && mult < 100)
 				{
 					_putchar(' ');
 					_putchar((mult / 10) + '0');
