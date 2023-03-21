@@ -1,7 +1,9 @@
 #include "_putchar.c"
 /**
+ * main - The main code.
  *
- *
+ * Return: On seccess O.
+ * On error, walo
  */
 int main(void)
 {
@@ -14,5 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return(0);
+	return (0);
 }
