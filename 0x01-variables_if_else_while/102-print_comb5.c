@@ -1,33 +1,34 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
 /**
- * main - this program is to know what is the sign of n.
- *
- * Return: Always 0 (Success)
+ * * main - Print all possible different combinations of two two-digit
+ * *
+ * * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, j, z, x;
+	int i, j, k, x;
 
 	for (i = '0'; i <= '9'; i++)
 	{
-		for (j = '0'; j <= '8'; j++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			for (z = i; z <= '9'; z++)
+			for (k = '0'; k <= '9'; k++)
 			{
-				for (x = 1 + j; x <= '9'; x++)
+				for (x = '0'; x <= '9'; x++)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(z);
-					putchar(x);
-					if (i == '9' && j == '8' && z == '9' && x == '9')
+					if (i * 10 + j < k * 10 + x)
+					{
+						putchar(i);
+						putchar(j);
+						putchar(' ');
+						putchar(k);
+						putchar(x);
+					if (i == '9' && j == '8' && k == '9' && x == '9')
 						break;
-					putchar(',');
-					putchar(' ');
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
