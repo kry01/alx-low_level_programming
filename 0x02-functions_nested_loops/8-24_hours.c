@@ -1,10 +1,7 @@
 #include "main.h"
 /**
- * jack_bauer - print the last digit of a number
- * @i: var int.
- * @j: another int
- * Return: return 0.
- */
+ * jack_bauer - prints the time from 00:00 to 23:59
+ **/
 void jack_bauer(void)
 {
 	int i, j;
