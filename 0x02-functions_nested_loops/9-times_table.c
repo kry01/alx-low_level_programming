@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - prints the time from 00:00 to 23:59
+ * times_table - prints the time from 00:00 to 23:59
  **/
 void times_table(void)
 {
