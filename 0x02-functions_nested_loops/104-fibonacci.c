@@ -6,15 +6,15 @@
 int main(void)
 {
 	int count = 0;
-	float sum, var1, var2;
+	double sum, var1, var2;
 
 	var1 = 1;
 	var2 = 2;
-	printf("%0.f, %0.f, ", var1, var2);
+	printf("%g, %g, ", var1, var2);
 	while (count < 96)
 	{
 		sum = var1 + var2;
-		printf("%0.f", sum);
+		printf("%g", sum);
 		if (count == 95)
 			break;
 		printf(", ");
