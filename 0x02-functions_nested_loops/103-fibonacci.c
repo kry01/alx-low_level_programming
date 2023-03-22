@@ -12,11 +12,11 @@ int main(void)
 	final = sum = 0;
 	while (sum <= 4000000)
 	{
-			sum = var1 + var2;
-			var1 = var2;
-			var2 = sum;
-			if (var1 % 2 == 0)
-				final = final + var1;
+		sum = var1 + var2;
+		var1 = var2;
+		var2 = sum;
+		if ((var1 % 2) == 0)
+		final = final + var1;
 	}
 	printf("%ld\n", final);
 	return (0);
