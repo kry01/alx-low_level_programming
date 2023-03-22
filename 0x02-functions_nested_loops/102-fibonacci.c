@@ -5,15 +5,23 @@
  */
 int main(void)
 {
-	int sum, count = 0,var1 = 1, var2 = 2;
+	int count = 0;
+	unsigned long int sum, var1, var2;
+	var1 = 1;
+	var2 = 2;
 
-	while (count < 50)
+	printf("%ld, %ld, ", var1, var2);
+	while (count < 48)
 	{
 		sum = var1 + var2;
-		printf("%d, ", sum);
+		printf("%ld", sum);
+		if (count == 47)
+			break;
+		printf(", ");
 		var1 = var2;
 		var2 = sum;
 		count++;
 	}
+	printf("\n");
 	return (0);
 }
