@@ -5,7 +5,6 @@
  */
 int main(void)
 {
-	int count = 0;
 	unsigned long int sum, var1, var2, final;
 
 	var1 = 1;
