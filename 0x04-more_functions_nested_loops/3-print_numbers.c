@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * print_numbers - This function for knowing if c is uppercase.
+ * print_numbers - print 0 to 9..
  *
- * @a: char
- * @b: char
  *
  * Return: 1 and 0.
  */
@@ -13,7 +11,7 @@ void print_numbers(void)
 {
 	int i;
 
-	for(i = 48; i < 58; i++)
+	for (i = 48; i < 58; i++)
 	{
 		_putchar(i);
 	}
