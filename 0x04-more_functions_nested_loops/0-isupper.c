@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * 
+ * isupper - This function for knowing if c is uppercase.
+ *
+ * Return: 1 and 0.
  */
 
 int _isupper(int c)
