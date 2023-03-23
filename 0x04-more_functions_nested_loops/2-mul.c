@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mult - This function for knowing if c is uppercase.
+ * mul - This function for knowing if c is uppercase.
  *
  * @a: char
  * @b: char
@@ -11,5 +11,7 @@
 
 int mul(int a, int b)
 {
-	return (a * b);
+	int mult = a * b;
+
+	return (mult);
 }
