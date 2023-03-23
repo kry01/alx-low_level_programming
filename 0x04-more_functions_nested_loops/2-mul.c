@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _isdigit - This function for knowing if c is uppercase.
+ * mult - This function for knowing if c is uppercase.
  *
- * @c: char
+ * @a: char
+ * @b: char
  *
  * Return: 1 and 0.
  */
