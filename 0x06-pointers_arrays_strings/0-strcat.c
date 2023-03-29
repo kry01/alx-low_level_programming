@@ -3,6 +3,8 @@
 /**
  * _strcat - the concatnate function.
  *
+ * @dest: first string.
+ * @src: second string.
  * Return: String.
  */
 
@@ -23,5 +25,5 @@ char *_strcat(char *dest, char *src)
 		}
 		i++;
 	}
-	return dest;
+	return (dest);
 }
