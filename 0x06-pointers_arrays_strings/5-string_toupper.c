@@ -10,9 +10,9 @@
 
 char *string_toupper(char *str)
 {
-	unsigned long int i = 0;
+	int i = 0;
 
-	for (i = 0; i < sizeof(str); i++)
+	for (i = 0; *(str + i); i++)
 	{
 		if (*(str + i) <= 122 && *(str + i) >= 97)
 		{
