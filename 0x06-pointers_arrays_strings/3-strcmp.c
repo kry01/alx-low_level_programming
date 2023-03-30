@@ -9,16 +9,31 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, j = 0;
+	int fs = 0, ss = 0, i = 0, cmp, g;
 
-	while (*(s1 + i) != '\0')
-		i++;
-	while (*(s2 + j) != '\0')
-		j++;
-	if (i < j)
-		return (-15);
-	else if (i > j)
-		return (15);
+	while (*(s1 + fs) != '\0')
+		fs++;
+	while (*(s2 + ss) != '\0')
+		ss++;
+	if (fs > ss)
+		g = fs;
 	else
-		return (0);
+		g = ss;
+	while (i < g)
+	{
+		if (*(s1 + i) < *(s2 + i))
+		{
+			cmp = -15;
+			break;
+		}
+		else if (*(s1 + i) > *(s2 + i))
+		{
+			cmp = 15;
+			break;
+		}
+		else
+			cmp = 0;
+		i++;
+	}
+	return (cmp);
 }
