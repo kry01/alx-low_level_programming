@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcmp - the function .
+ * _strcmp - the function .
  *
  * @s1: 1st string.
  * @s2: 2nd string.
