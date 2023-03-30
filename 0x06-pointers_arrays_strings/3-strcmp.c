@@ -23,12 +23,12 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (*(s1 + i) < *(s2 + i))
 		{
-			cmp = -15;
+			cmp = *(s1 + i) - *(s2 + i);
 			break;
 		}
 		else if (*(s1 + i) > *(s2 + i))
 		{
-			cmp = 15;
+			cmp = *(s1 + i) - *(s2 + i);
 			break;
 		}
 		else
