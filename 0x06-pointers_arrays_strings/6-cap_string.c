@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 {
 	int i = 0, j;
-	char sow[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char sow[] = " \t\n,;.!?\"(){}";
 
 	if (*(str + i) >= 97 && *(str + i) <= 122)
 		*(str + i) = *(str + i) - 32;
