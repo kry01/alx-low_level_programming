@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - the function main.
+ * Return: always 0.
+ */
 int main(void)
 {
 	int n;
