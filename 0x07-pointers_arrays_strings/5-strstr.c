@@ -11,19 +11,19 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i = 0, j;
 
-	while (*(haystack + i) != '\0')
+	while (*haystack)
 	{
-		if (*(haystack + i) == *(needle + 0))
+		if (*(haystack) == *(needle + i))
 		{
-			for (j = 1; *(needle + j) != '\0' ; j++)
+			for (j = 0; *(needle + j) != '\0' ; j++)
 			{
+				if (*(haystack) == *(needle + j))
+					return (haystack);
 				i++;
-				if (*(haystack + i) == *(needle + j))
-					return (haystack + i - 1);
 			}
 			break;
 		}
-		i++;
+		haystack++;
 	}
 	return (0);
 }
