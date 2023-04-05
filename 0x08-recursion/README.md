@@ -1,4 +1,4 @@
-#This folder contains the solution of all tasks in Recursion day.
+# This folder contains the solution of all tasks in Recursion day.
 
 | file name | Description |
 | -------- | ----------- |
