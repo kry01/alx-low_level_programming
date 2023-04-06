@@ -16,7 +16,11 @@ int is_prime_number(int n)
 }
 
 /**
+ * is_prime - calclate the prime numbers.
+ * @i: initial value.
+ * @h: max value.
  *
+ * Return: return the prime number.
  */
 
 int is_prime(int i, int h)
