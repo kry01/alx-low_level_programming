@@ -12,14 +12,14 @@ int is_palindrome(char *s)
 	if (sizeof(s) == 0)
 		return (0);
 	else
-		palindrome(*s, 0, sizeof(s) - 1);
+		return palindrome(s, 0, sizeof(s) - 1);
 
 }
 
 /**
  */
 
-int palindrome(char *str, int start, int end)
+int palindrome(char str, int start, int end)
 {
 	if (end > 0 || start < end / 2)
 	{
