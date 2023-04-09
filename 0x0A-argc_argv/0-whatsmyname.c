@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - the main function.
- * 
+ *main - prints program name
+ *@argc: number of arguments
+ *@argv: array of arguments
+ *Return: 0
  */
 int main(int __attribute__ (unused) agrc, char *argv[])
 {
