@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_array - function that creates an array of chars, and initializes it with a specific char.
+ * create_array - function that creates an array of chars.
  *
  * @size: size of the array.
  * @c: specific char.
@@ -17,10 +17,8 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0 || p == 0)
 		return ('\0');
-	else
-	{
-		for (i = 0; i <= size; i++)
-			p[i] = c;
-		return p;
-	}
+
+	for (i = 0; i <= size; i++)
+		p[i] = c;
+	return (p);
 }
