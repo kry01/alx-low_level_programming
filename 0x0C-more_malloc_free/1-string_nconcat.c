@@ -20,11 +20,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		while (*(s1 + c1) != 0)
 			c1++;
 	}
+	else
+		s1 = "";
 	if (s2 != 0)
 	{
 		while (*(s2 + c2) != 0)
 			c2++;
 	}
+	else
+		s2 = "";
 	if (n >= c2)
 		n = c2;
 	p = malloc(c1 + n);
