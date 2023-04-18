@@ -36,9 +36,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d->owner);
 		return (0);
 	}
-	for (x = 0; x <= i + 1; x++)
+	for (x = 0; x < i; x++)
 		(*d).name[x] = *(name + x);
-	for (x = 0; x <= j + 1; x++)
+	for (x = 0; x < j; x++)
 		(*d).owner[x] = *(owner + x);
 	d->age = age;
 	return (d);
