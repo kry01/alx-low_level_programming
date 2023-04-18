@@ -36,12 +36,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d->owner);
 		return (0);
 	}
-	for (x = 0; x <= i; x++)
+	for (x = 0; x < i; x++)
 		(*d).name[x] = *(name + x);
-	(*d).name[x] = 0;
-	for (x = 0; x <= j; x++)
-		(*d).owner[x] = *(owner + x);
-	(*d).owner[x] = 0;
+	(*d).name[x] = '\0';
 	d->age = age;
+	for (x = 0; x < j; x++)
+		(*d).owner[x] = *(owner + x);
+	(*d).owner[x] = '\0';
 	return (d);
 }
