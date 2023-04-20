@@ -5,7 +5,7 @@
  * main -  program that prints the opcodes of its own main function.
  * @argc: the size of argv.
  * @argv: number of bytes.
- *
+ * Return: always 0;
  */
 
 int main(int argc, char *argv[])
@@ -27,9 +27,8 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < num; i++)
 	{
-		x = *(unsigned char *)f; 
+		x = *((unsigned char *)f + i);
 		printf("%.2x", x);
-		x++;
 		if (i == num - 1)
 			continue;
 		printf(" ");
