@@ -9,6 +9,7 @@
 void free_list(list_t *head)
 {
 	list_t *h;
+
 	h = head;
 	while (h != 0)
 	{
