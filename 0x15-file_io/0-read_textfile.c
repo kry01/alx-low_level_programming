@@ -19,11 +19,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	o = open(filename, O_RDONLY);
 	if (o == -1)
+	{
+		free(bf);
 		return (0);
+	}
 	r = read(o, bf, letters);
 	w = write(1, bf, r);
-	if (w == -1)
-		return (0);
 	free(bf);
 	close(o);
 	return (w);
